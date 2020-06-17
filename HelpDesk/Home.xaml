@@ -1,0 +1,61 @@
+﻿<Page
+    x:Class="HelpDesk.Home"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HelpDesk"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel
+            VerticalAlignment="Top"
+            HorizontalAlignment="Center"
+            Margin="0,30,0,0">
+            <Image Source="Assets\HelpDesk2.png"
+                   Height="250" 
+                   Width="250"/>
+            <Button
+                x:Name="NewTicketButton"
+                HorizontalAlignment="Center"
+                Margin="10,20,0,0"
+                Width="200"
+                Height="50"
+                Content="New Ticket"
+                Foreground="White"
+                Style="{ThemeResource NavigationViewTitleHeaderContentControlTextStyle}"
+                Click="NewTicketButton_Click"
+                Background="#FFF57C00"/>
+            <Button
+                x:Name="ManageTicketButton"
+                HorizontalAlignment="Center"
+                Margin="10,20,0,0"
+                Width="200"
+                Height="50"
+                Content="Manage Tickets"
+                Foreground="White"
+                Style="{ThemeResource NavigationViewTitleHeaderContentControlTextStyle}"
+                Background="#FFF57C00"/>
+        </StackPanel>
+        <StackPanel
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Center">
+            <TextBlock 
+                Text="Your Organization Name"
+                Style="{ThemeResource BodyTextBlockStyle}"
+                HorizontalAlignment="Center"
+                Margin="0,5,0,0"/>
+            <TextBlock 
+                Text="Help Desk"
+                Style="{ThemeResource BodyTextBlockStyle}"
+                HorizontalAlignment="Center"
+                Margin="0,5,0,0"/>
+            <TextBlock 
+                Text="Copyright Hero G. 2020"
+                Style="{ThemeResource BodyTextBlockStyle}"
+                HorizontalAlignment="Center"
+                Margin="0,5,0,10"/>
+        </StackPanel>
+    </Grid>
+</Page>
